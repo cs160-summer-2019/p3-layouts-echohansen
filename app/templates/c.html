@@ -14,7 +14,41 @@
 		<script src="{% static '/vendors/jquery-ui/jquery-ui.min.js' %}"></script>
 	</head>
 	<body>
-		<!-- Your layout here -->
-
+		<div class="bkgnd">
+			<div class="box">
+				<div class="stretch mybox"></div>
+				<div class="stretch mybox"></div>
+				<div class="stretch mybox"></div>
+				<div class="stretch mybox"></div>
+				<div class="stretch mybox"></div>
+				<div class="stretch mybox"></div>
+				<div class="stretch mybox"></div>
+    	</div>
+			
+		</div>
 	</body>
+  
+  <style>
+		.bkgnd {
+			background-color: purple;
+			width: 1400px;
+			height: 800px;
+		}
+    .mybox {
+      background-color: orange;
+      width: 16%;
+      height: 24%;
+      text-align: center;
+      margin-left: 32px;
+      margin-top: 32px;
+    }
+    .box {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      height: 600px;
+      align-content: flex-start;
+    }
+	</style>
 </html>

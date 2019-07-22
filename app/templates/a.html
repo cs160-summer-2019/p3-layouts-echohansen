@@ -15,6 +15,40 @@
 	</head>
 	<body>
 		<!-- Your layout here -->
+		<div class = "bkgnd">
+			<div class="box">
+				<div class="stretch mybox"></div>
+				<div class="stretch mybox"></div>
+				<div class="stretch mybox"></div>
+			</div>
+		</div>
 
 	</body>
+		<style>
+		.bkgnd {
+			background-color: purple;
+			height: 800px;
+			width: 1200px;
+		}
+	.mybox {
+      background-color: orange;
+      width: 100%;
+      align-content: center;
+      margin-left: 20px;
+      margin-right: 20px;
+    
+    }
+    .box {
+      display: flex;
+      align-items: flex-start;
+      height: 800px;
+    }
+    .stretch {
+      align-self: stretch;
+    }
+    .box .selected {
+      align-self: center;
+    }
+	
+	</style>
 </html>
